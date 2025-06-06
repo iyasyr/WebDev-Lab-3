@@ -148,7 +148,10 @@ a:hover, a:focus {
   padding: 18px 20px;
   text-align: center;
   border-bottom: 2px solid #d4af37;
-   font-size: 1.1rem;
+  font-size: 1.1rem;
+  position: sticky; 
+  top: 0; 
+  z-index: 100;
 }
 
 .bg-secondary { background: #21253a; }
