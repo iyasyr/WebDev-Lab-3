@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cantantes - Leyendas del Rock</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="body">
+  <header class="lab-header">
+    <strong>Nota:</strong> Para esta entrega he eliminado las otras páginas del proyecto. Aquí solo se muestra la página
+    solicitada para esta parte de la práctica de laboratorio.
+  </header>
+  <main class="main-content">
+    <h1 class="title">Cantantes legendarios del rock</h1>
+
+    <div id="list-tip" class="tip">
+      <span>🔗 Puedes hacer clic en el nombre de cualquier artista para saltar directamente a su tarjeta abajo.</span>
+    </div>
+
+    <!-- List of artists -->
+    <div id="indice-artistas">
+      <h2 class="subtitle">Índice de artistas</h2>
+      <ol class="artist-index-list">
+        <li><a href="#freddie">Freddie Mercury</a></li>
+        <li><a href="#lennon">John Lennon</a></li>
+        <li><a href="#jagger">Mick Jagger</a></li>
+      </ol>
+    </div>
+
+
+    <!-- Demo de background-image, hover, active, cursor, opacity, etc. -->
+    <div class="demo-effects mb-2">
+      <strong>🎨 Demostración de background, hover, active, cursor y más:</strong>
+      <div class="demo-interactive-box main-content-with-bg" tabindex="0">
+        <span>¡Pasa el ratón o haz clic aquí!</span><br>
+        <p>
+          (Este bloque tiene imagen de fondo, cambia de color y sombra al interactuar, <br>
+          <b>opacity</b> aplicada a este texto, cursor personalizado y <b>:active</b> efecto al hacer clic)
+        </p>
+      </div>
+    </div>
+
+    <!-- Grid table to show overflow options -->
+    <div class="overflow-demo-table">
+      <div class="overflow-cell overflow-visible">
+        <div class="overflow-header">overflow: visible</div>
+        <div>
+          El contenido se muestra aunque se salga del área.
+          <div class="overflow-text">
+            Este texto es muy largo y sale fuera de la caja.
+          </div>
+        </div>
+      </div>
+      <div class="overflow-cell overflow-hidden">
+        <div class="overflow-header">overflow: hidden</div>
+        <div class="full-width">
+          El contenido que se sale de la caja queda oculto.
+          <div class="overflow-text">
+            Este texto es muy largo y sale fuera de la caja.
+          </div>
+        </div>
+      </div>
+      <div class="overflow-cell overflow-scroll">
+        <div class="overflow-header">overflow: scroll</div>
+        <div>
+          Aparecen barras de desplazamiento siempre, aunque no hagan falta.
+          <div class="overflow-text">
+            Este texto es muy largo y sale fuera de la caja.
+          </div>
+        </div>
+      </div>
+      <div class="overflow-cell overflow-auto">
+        <div class="overflow-header">overflow: auto</div>
+        <div>
+          Las barras de desplazamiento aparecen solo si el contenido es demasiado grande.
+          <div class="overflow-text">
+            Este texto es muy largo y sale fuera de la caja.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Three levels of divs with id -->
+    <div id="contenedor-principal" class="container-primary">
+      <div id="artistas-lista" class="gap-2">
+        <div id="hover-tip" class="tip">
+          <span>💡 Consejo: pasa el ratón por encima de cualquier tarjeta para ver el efecto interactivo.</span>
+        </div>
+        <div class="artists-list p-16 bg-secondary shadow-md">
+          <!-- Three cards of singers -->
+          <section class="singer-card card-purple" id="freddie">
+            <img class="singer-image border-pink shadow-sm"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Freddie_Mercury_performing_in_New_Haven%2C_CT%2C_November_1977_cropped.jpg/1024px-Freddie_Mercury_performing_in_New_Haven%2C_CT%2C_November_1977_cropped.jpg"
+              alt="Freddie Mercury" width="320" height="180" />
+            <h2 class="card-title">Freddie Mercury</h2>
+            <p class="card-text">
+              Freddie Mercury fue el icónico vocalista de Queen, reconocido por su voz poderosa y su presencia escénica
+              única. Con éxitos como "Bohemian Rhapsody" y "We Are the Champions", Mercury dejó una huella imborrable en
+              la historia del rock.
+            </p>
+          </section>
+
+          <section class="singer-card card-green" id="lennon">
+            <img class="singer-image border-green shadow-sm"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/85/John_Lennon_1969_%28cropped%29.jpg"
+              alt="John Lennon" width="320" height="180" />
+            <h2 class="card-title">John Lennon</h2>
+            <p class="card-text">
+              John Lennon fue cantante, compositor y fundador de The Beatles. Es conocido tanto por su contribución al
+              rock como por sus mensajes de paz. Canciones como "Imagine" y "Help!" siguen siendo himnos universales.
+            </p>
+          </section>
+
+          <section class="singer-card card-orange" id="jagger">
+            <img class="singer-image border-orange shadow-sm"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mick_Jagger_%281982%29.jpg/1280px-Mick_Jagger_%281982%29.jpg"
+              alt="Mick Jagger" width="320" height="180" />
+            <h2 class="card-title">Mick Jagger</h2>
+            <p class="card-text">
+              Mick Jagger es el legendario líder y vocalista de The Rolling Stones. Su energía en el escenario y su
+              estilo inconfundible han convertido a Jagger en uno de los cantantes más reconocidos y carismáticos del
+              rock.
+            </p>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <footer class="footer">
+    Laboratorio de Programación Web, Ilia Iasyr
+  </footer>
+</body>
+
+</html>
